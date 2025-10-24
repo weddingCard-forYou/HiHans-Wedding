@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-    // Webpack ERROR : Module not found: Can't resolve
-    webpack5: true,
-    webpack: (config) => {
-        config.resolve.fallback = { fs: false };
+const isProd = process.env.NODE_ENV === 'production'
 
-        return config;
-    },
+const nextConfig = {
+    output: 'export',
+    images: {unoptimized: true},
+    basePath: isProd ? '/HiHans-Wedding' : '',
+    assetPrefix: isProd ? '/HiHans-Wedding/':'',
 };
 
 module.exports = nextConfig;
