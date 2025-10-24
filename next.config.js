@@ -6,6 +6,9 @@ const nextConfig = {
     images: {unoptimized: true},
     basePath: isProd ? '/HiHans-Wedding' : '',
     assetPrefix: isProd ? '/HiHans-Wedding/':'',
+    env: {
+        NEXT_PUBLIC_BASE_PATH: isProd ? '/HiHans-Wedding':''
+    }
 };
 
 module.exports = nextConfig;

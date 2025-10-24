@@ -8,6 +8,7 @@ import { useRef } from 'react';
 export default function MainImage() {
     // text event Handling
     const textRef = useRef<HTMLSpanElement>(null);
+    const prefix = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
     const handleScrollTextEvent = () => {
         if (textRef.current) {
@@ -143,7 +144,7 @@ export default function MainImage() {
             </div>
 
             <div className='absolute bottom-[-2px] border-white text-center'>
-                <img className='w-[480px]' src='/images/cal.png' alt='cal' />
+                <img className='w-[480px]' src={`${prefix}/images/cal.png`} alt='cal' />
                 <span
                     ref={textRef}
                     className='text-slate-700 font-naum absolute translate-x-[-50%] translate-y-[-100%] transition duration-200 ease-in '
