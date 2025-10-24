@@ -139,7 +139,7 @@ export default function MainImage() {
                     data-aos-delay='3000'
                     className='italic absolute font-seoul text-[1.0em] text-white top-[9rem] left-8 border-b-2'
                 >
-                    <span>2026.02.21.(토) 오후 3시 40분</span>
+                    <span>2026.02.21.(토) 오후 3시 30분</span>
                 </div>
             </div>
 

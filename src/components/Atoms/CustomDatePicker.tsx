@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import CalendarDate from './CalendarDate';
 
 export default function CustomDatePicker() {
-    const daysRemain = differenceInDays(new Date(2026, 2, 21), new Date());
+    const daysRemain = differenceInDays(new Date(2026, 1, 21), new Date());
 
     // 글자 블링크 효과
     const [isVisible, setIsVisible] = useState<boolean>(true);
@@ -29,7 +29,7 @@ export default function CustomDatePicker() {
                 <p className='text-xl py-4 font-seoul'>
                     2026년 02월 21일 토요일
                 </p>
-                <p className='font-seoul text-[18px]'>오후 3시 40분</p>
+                <p className='font-seoul text-[18px]'>오후 3시 30분</p>
             </div>
             <CalendarDate />
             <div>
