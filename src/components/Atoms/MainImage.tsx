@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import AOS from 'aos';
 import { useEffect } from 'react';
-import wedding from '../../../public/images/wedding6.jpeg';
+import wedding from '../../../public/images/main-cover.jpg';
 import { useRef } from 'react';
 
 export default function MainImage() {
