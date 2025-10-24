@@ -35,26 +35,6 @@ export default function Invitation() {
 
     return (
         <>
-            <div
-                className={`z-10 relative sticky top-0 bottom-6 ${
-                    isNavigatorVisible ? 'opacity-100' : 'opacity-0 z-0 '
-                } transition-opacity duration-300 ease-in-out`}
-            >
-                <Image
-                    onClick={handleNavigatorClick}
-                    className='cursor-pointer animate-bounce absolute top-56 right-1'
-                    src={icon}
-                    alt='chatbot'
-                    width={100}
-                />
-                <span
-                    onClick={handleNavigatorClick}
-                    className='cursor-pointer absolute right-2 bottom-[-22rem] font-seoul font-bold text-[12px] text-center w-[90px] break-all bg-rose-100 rounded-3xl p-2'
-                >
-                    제주도 일정은 여기를 눌러주세요
-                </span>
-            </div>
-
             <div className='my-32 mx-10'>
                 <div
                     data-aos='fade-up'
@@ -108,11 +88,11 @@ export default function Invitation() {
                     <div>
                         <div className='flex justify-center items-center font-arita p-2'>
                             <span className='font-extrabold font-seoul'>
-                                이인규
+                                한인범
                             </span>
                             ·
                             <span className='font-extrabold font-seoul'>
-                                이수민
+                                강수옥
                             </span>
                             <span className='font-extrabold font-seoul'>
                                 의
@@ -121,25 +101,25 @@ export default function Invitation() {
                                 장남
                             </span>
                             <span className='pl-2 text-2xl font-SunBatang translate-y-[-10%] text-gray-600'>
-                                종일
+                                경민
                             </span>
                         </div>
                         <div className='flex justify-center items-center font-arita p-2'>
                             <span className='font-extrabold font-seoul'>
-                                이광택
+                                박OO
                             </span>
                             ·
                             <span className='font-extrabold font-seoul'>
-                                조동순
+                                권순미
                             </span>
                             <span className='font-extrabold font-seoul'>
                                 의
                             </span>
                             <span className='pl-2 text-sm text-gray-800'>
-                                차녀
+                                장녀
                             </span>
                             <span className='pl-2 text-2xl font-SunBatang translate-y-[-10%] text-gray-600'>
-                                효민
+                                혜인
                             </span>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import { getDay, startOfMonth, endOfMonth, eachDayOfInterval } from 'date-fns';
 
 export default function CalendarDate() {
     // 2023년 10월로 설정 ** 월은 0부터 시작
-    const today = new Date(2023, 9, 1);
+    const today = new Date(2026, 1, 21);
     const weekly = ['일', '월', '화', '수', '목', '금', '토'];
     const startOfCurrentMonth = startOfMonth(today);
     const endOfCurrentMonth = endOfMonth(today);
@@ -11,6 +11,8 @@ export default function CalendarDate() {
         start: startOfCurrentMonth,
         end: endOfCurrentMonth,
     });
+
+    console.log(startOfCurrentMonth)
 
     const getDayClassName = (date: Date) => {
         const day = getDay(date);
@@ -23,7 +25,7 @@ export default function CalendarDate() {
         }
 
         // D-day
-        if (date.getDate() === 7) {
+        if (date.getDate() === 21) {
             className =
                 'rounded-[50%] text-white bg-red-400 hover:bg-red-300 after:content-["♥︎"] after:pl-[1px] after:text-[8px]';
         }
