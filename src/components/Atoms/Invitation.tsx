@@ -106,7 +106,7 @@ export default function Invitation() {
                         </div>
                         <div className='flex justify-center items-center font-arita p-2'>
                             <span className='font-extrabold font-seoul'>
-                                박OO
+                                박순목
                             </span>
                             ·
                             <span className='font-extrabold font-seoul'>

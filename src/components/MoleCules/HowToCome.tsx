@@ -19,15 +19,15 @@ export default function HowToCome() {
                 </h3>
             </div>
             <div className='flex-col items-start mb-6 font-naum'>
-                <h2 className='text-md'>삼산월드컨벤션센터</h2>
+                <h2 className='text-md'>수원파티웨딩유</h2>
                 <h3 className='text-sm '>
-                    인천광역시 부평구 체육관로 60 삼산월드체육관
+                    경기 수원시 권선구 세화로 218
                 </h3>
-                <p className='text-sm'>032-719-3301</p>
+                <p className='text-sm'>031-297-1000</p>
             </div>
             <div className='flex items-center py-4'>
                 <HiLocationMarker className='text-3xl text-neutral-400' />
-                <p className='ml-2 font-suite'>삼산월드컨벤션센터</p>
+                <p className='ml-2 font-suite'>수원파티웨딩유</p>
             </div>
             <HallMap />
             <MapDesc />

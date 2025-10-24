@@ -1,6 +1,8 @@
 import { getDay, startOfMonth, endOfMonth, eachDayOfInterval } from 'date-fns';
+import React from 'react';
 
-export default function CalendarDate() {
+export default React.memo(CalendarDate)
+function CalendarDate() {
     // 2023년 10월로 설정 ** 월은 0부터 시작
     const today = new Date(2026, 1, 21);
     const weekly = ['일', '월', '화', '수', '목', '금', '토'];
@@ -11,8 +13,6 @@ export default function CalendarDate() {
         start: startOfCurrentMonth,
         end: endOfCurrentMonth,
     });
-
-    console.log(startOfCurrentMonth)
 
     const getDayClassName = (date: Date) => {
         const day = getDay(date);
